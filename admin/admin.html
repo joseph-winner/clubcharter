@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lion of the Desert</title>
-    <link rel="stylesheet" href="userdata.css">
-    <link rel="stylesheet" href="../Registration/registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +51,27 @@
         <input type="name" name="name" id="name" placeholder="Enter User Name" required>
         <input type="password" name="password" id="password" placeholder="*****" required>
         <button>Login</button>
-    </article>      
+    </article>
+    
+    <script>
+        var user1 = {
+            name: "mubarak", 
+            password: "mubarak2023"
+        }
+        var user2 = {
+            name: "mauvin",
+            password: "mauvin2023"
+        }
+        
+        var button = document.getElementsByTagName("button")[0]
+        button.addEventListener("click", ()=>{
+            var name = document.getElementById("name");
+            var password = document.getElementById("password");
+            if(name.value === user1.name || name.value === user2.name && password.value === user1.password || password.value === user2.password){
+                window.location = "../USERDATA/USERPROFILEDATA.html"
+            }
+        })
+    </script>
 </body>
 </html>
 
