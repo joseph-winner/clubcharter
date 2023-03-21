@@ -14,6 +14,7 @@
     body{
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         height: 100vh;
     }
@@ -36,6 +37,25 @@
     .admin-section input{
         margin: 20px 0px;
     }
+
+    .alert-message{
+        display: block;
+        position: absolute;
+        background-color: #c549f5;
+        color: #fff;
+        width: 85%;
+        padding: 80px 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .dele{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background-color: #fff;
+        color: #c549f5;
+        padding: 3px;
+        cursor: pointer;
+    }
 </style>
 <body>
     <article class="admin-section">
@@ -52,8 +72,22 @@
         <input type="password" name="password" id="password" placeholder="*****" required>
         <button>Login</button>
     </article>
+    <div class="alert-message" style="display: none;">
+        <h4>CLUB CHARTER</h4>
+        <p>
+            Dear User You Must Be Registered as Admin No such Records in our Data Base
+        </p>
+        <span class="dele">
+            OK
+        </span>
+    </div>
     
     <script>
+        var deleteBtn = document.querySelector(".dele")
+        deleteBtn.addEventListener("click", ()=>{
+            document.querySelector(".alert-message").style.display = "none";
+        })
+
         var user1 = {
             name: "mubarak", 
             password: "mubarak2023"
@@ -69,7 +103,10 @@
             var password = document.getElementById("password");
             if(name.value === user1.name || name.value === user2.name && password.value === user1.password || password.value === user2.password){
                 window.location = "../USERDATA/USERPROFILEDATA.html"
+            } else {
+                document.querySelector(".alert-message").style.display = "block";
             }
+        
         })
     </script>
 </body>
