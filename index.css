@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #c549f5;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+header h1{
+    font-size: 16px;
+}
+
+.head-join{
+    position: relative;
+}
+
+header #head-user h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.sheme-header .tagline{
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.sheme-header .link-btn{
+    background-color: #ef9372;
+    text-align: center;
+    font-weight: 500;
+    margin: 8px 2px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.sheme-header .link-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.scheme-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 8px;
+    background: linear-gradient(to bottom right,#c549f5, #ff978c);
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+}
+
+.scheme-1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.scheme-img img{
+    width: 150px;
+}
+.scheme-2 .scheme-img img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    mix-blend-mode: color-burn;
+}
+.scheme-2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 20px 10px;
+    background-color: #c549f5;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+.scheme-2 .button-privacy{
+    text-decoration: none;
+    /* position: absolute; */
+    right: 10px;
+    bottom: 2px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #c549f5;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.scheme-2 .button-privacy a{
+    text-decoration: none;
+    color: #c549f5;
+}
+
+.scheme-3{
+    margin: 20px 10px;
+}
+
+#scheme-3-div a{
+    display: flex;
+    align-items: center;
+    margin: 10px 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 8px;
+    color: #c549f5;
+}
+
+#scheme-3-div a{
+    text-decoration: none;
+    color: #c549f5;
+}
+
+.scheme-3 div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer{
+    background: linear-gradient(to bottom right,#c549f5, #ff978c);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    position: sticky;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+

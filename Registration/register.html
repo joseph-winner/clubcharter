@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lion of the Desert</title>
+    <link rel="stylesheet" href="registration.css">
+    <!-- <link rel="stylesheet" href="../USERDATA/userdata.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="register-member">
+        <article class="registration">
+            <div class="reg-header">
+                <h1>MEMEBERSHIP REGISTRATION</h1>
+                <img src="../images/register-img.jpeg" alt="Header Image!">
+            </div>
+        </article>
+
+        <div class="error-message" style="display: none;">
+            <i class="fa fa-exclamation-circle"></i>
+            <p>
+                    Oops something wrong happened, fill all areas
+            </p>
+            <button class="error-closebtn">&times;</button>
+        </div>
+        <div class="wrapper">
+            <div class="header">
+                <ul>
+                    <li class="active form-1-progressbar">
+                        <div>
+                            <p>1</p>
+                        </div>
+                    </li>
+                    <li class="form-2-progressbar">
+                        <div>
+                            <p>2</p>
+                        </div>
+                    </li>
+                    <li class="form-3-progressbar">
+                        <div>
+                            <p>3</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-wrap">
+            <div class="form-1-data-info forrm-data">
+                <h2>Signup Information Personal Information</h2>
+                <div class="form-container">
+                    <div class="input-wrapper">
+                        <label for="name">Name:</label>
+                        <input type="name" name="name" id="user-nam" placeholder="Enter Full Names">
+
+
+                        <label for="passport">Passport Number:</label>
+                        <input type="text" name="passport" id="passport" placeholder="Enter Passport Number">
+
+
+                        <label for="qid">Qid Number:</label>
+                        <input type="number" name="qid" id="qid" placeholder="Enter Qid Number">
+
+                        <label for="address"> Home Address:</label>
+                        <input type="text" name="address" id="address" placeholder="Enter  Home Address">
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number">
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-2-data-info forrm-data" style="display:none">
+                <h2>Signup Information Next of Kin Information</h2>
+                <div class="form-container">
+                    <div class="input-wrapper">
+                        <label for="name">Name:</label>
+                        <input type="name" name="name" id="kin-name" placeholder="Enter Full Names">
+
+                        <label for="id">ID Number:</label>
+                        <input type="number" name="id" id="kin-id" placeholder="Enter ID Number">
+
+                        <label for="address"> Home Address:</label>
+                        <input type="text" name="address" id="kin-address" placeholder="Enter  Home Address">
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="kin-phone" placeholder="Enter Phone Number">
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="kin-email" placeholder="Enter Email Address">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-3-data-info forrm-data" style="display:none">
+                <h2>Signup Information Information</h2>
+                <div class="form-container">
+                    <div class="input-wrapper">
+                        <label for="passport-image" id="passport-photo-label">Passport Photo</label>
+                        <input type="file" name="passport" id="passportImageFile" class="imageFile" accept=".jpg, .png, .jpeg" >
+                        <img class="selected-image" alt="">
+                        <div class="upload-passport" id="upload-btn">Upload</div>
+                           
+
+                            <label for="qid-front-image" id="qid-front-label">QID Front Photo</label>
+                            <input type="file" name="qid-front" id="qid-Front" class="imageFile" accept=".jpg, .png, .jpeg">
+                            <img class="selected-image" alt="">
+                            <div class="upload-qid-front" id="upload-btn">Upload</div>
+
+                            <label for="qid-back-image" id="qid-back-label">QID Back Photo</label>
+                            <input type="file" name="qid-back" id="qid-back" class="imageFile" accept=".jpg, .png, .jpeg" >
+                            <img class="selected-image" alt="">
+                            <div class="upload-qid-back" id="upload-btn">Upload</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="btns-wrap">
+            <div class="common-btn form-1-btn">
+                <button type="button" class="next-btn">Next
+                    <span class="icon"><i class="fa fa-angle-double-right"></i></span>
+                </button>
+            </div>
+
+            <div class="common-btn form-2-btn" style="display:none">
+                <button type="button" class="back-btn">
+                    <span class="icon"><i class="fa fa-angle-double-left"></i></span>
+                    Back
+                </button>
+                <button type="button" class="next-btn">Next
+                    <span class="icon"><i class="fa fa-angle-double-right"></i></span>
+                </button>
+            </div>
+
+            <div class="common-btn form-3-btn" style="display:none">
+                <button type="button" class="back-btn">
+                    <span class="icon"><i class="fa fa-angle-double-left"></i></span>
+                    Back
+                </button>
+                <button type="button" class="done-btn">Done
+                    <span class="icon"><i class="fa fa-angle-double-right"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <article class="success-message" style="display:none;">
+            <div class="success-message-content">
+                <h1>
+                    <i class="fa fa-check-circle"></i>
+                </h1>
+            </div>
+            <h3 id="messageText">
+                Dear <span class="success-name">Joseph</span> you have successfully Registered as full Member of 
+                <span class="club--name">CLUB CHARTER</span> Your information will be treated with Privacy it deserves
+                <span class="terms">Terms and Conditions Apply Club Charter</span>
+                <span class="link-home"><a href="../index.html">Go To Home Page</a></span>
+            </h3>
+        </article>
+    </section>
+
+</body>
+<script src="registration.js" type="module"></script>
+<!-- <script src="../USERDATA/userdata.js" type="module"></script> -->
+</html>
