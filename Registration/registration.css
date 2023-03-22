@@ -37,7 +37,7 @@
     height: 150px;
     border-radius: 6px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border: 0.5px solid #2206f5;
+    border: 0.5px solid #c549f5;
     cursor: pointer;
     position: relative;
 }
@@ -45,7 +45,7 @@
 .image-selected i{
     font-weight: 600;
     font-size: 60px;
-    color: dodgerblue;
+    color: #c549f5;
 }
 
 
@@ -105,7 +105,7 @@
 
 .wrapper .header ul li.active:before, 
 .wrapper .header ul li.active p{
-    background-color:dodgerblue;
+    background-color:#c549f5;
 }
 
 .forrm-data{
@@ -148,7 +148,7 @@
 .btns-wrap .common-btn button{
     border: 0;
     padding: 12px 15px;
-    background-color: dodgerblue;
+    background-color: #c549f5;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -257,14 +257,14 @@
   }
 
   .input-wrapper .selected-image{
-    width: 280px;
+    width: 320px;
     height: 200px;
     border: 1px solid #000;
-    display: none;
+    /* display: none; */
     border-radius: 5px;
     margin: 10px;
   }
-  #upload-btn{
+  /* #upload-btn{
     background-color: rgb(2, 47, 2);
     width: fit-content;
     padding: 5px 10px;
@@ -275,7 +275,7 @@
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
-  }
+  } */
 @media(max-width:767px){
     .register-member{
         margin: 10px;

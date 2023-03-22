@@ -25,6 +25,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
         var reader = new FileReader();
         reader.onload = function (e) {
             imageArr1(reader.result);
+            document.querySelector("#passarea").src = (reader.result);
+            document.querySelector("#passarea").style.display = "block"
+            passport_photo.style.display = "none"
             
         }
         reader.readAsDataURL(imageChanges);
@@ -39,6 +42,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
         var reader = new FileReader();
         reader.onload = function (e) {
             imageArr2(reader.result);
+            document.querySelector("#qid--frontkarea").src = (reader.result);
+            document.querySelector("#qid--frontkarea").style.display = "block"
+            qidFront_photo.style.display = "none"
             
         }
         reader.readAsDataURL(imageChanges);
@@ -52,7 +58,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
         var reader = new FileReader();
         reader.onload = function (e) {
             imageArr3(reader.result);
-            
+            document.querySelector("#qid--backarea").src = (reader.result);
+            document.querySelector("#qid--backarea").style.display = "block"
+            qidBack_photo.style.display = "none"
         }
         reader.readAsDataURL(imageChanges);
     })
@@ -65,6 +73,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
   var form_3_doneBtn = document.querySelector(".form-3-btn .done-btn");
     form_3_doneBtn.addEventListener("click", () =>{
         var userNam = document.querySelector(".input-wrapper #user-nam").value
+        var handle = document.querySelector("#handle").value;
         var userNam = document.querySelector(".input-wrapper #user-nam").value
         var userpassport = document.querySelector(".input-wrapper #passport").value
         var userqid = document.querySelector(".input-wrapper #qid").value
@@ -77,8 +86,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
         var kinphone = document.querySelector(".input-wrapper #kin-phone").value
         var kinemail = document.querySelector(".input-wrapper #kin-email").value
         // console.log(imagesArr)
-        setDoc(doc(db, "Members", userNam), {
+        setDoc(doc(db, "Members", handle), {
             userName: userNam,
+            handle: handle,
             userPassport: userpassport,
             userQid: userqid,
             userAddress: useraddress,
@@ -127,7 +137,7 @@ form_1_next_btn.addEventListener("click", () =>{
     form_2_btn.style.display = "flex"
 
     form_2_progressbar.classList.add("active")
-    handleinputs();
+    // handleinputs();
 })
 
 
@@ -150,7 +160,7 @@ form_2_next_btn.addEventListener("click", () =>{
     form_3_btn.style.display = "flex"
 
     form_3_progressbar.classList.add("active")
-    handleInputs();
+    // handleInputs();
 })
 
 form_3_back_btn.addEventListener("click", () =>{
@@ -175,6 +185,7 @@ var userqid = document.querySelector(".input-wrapper #qid")
 var useraddress = document.querySelector(".input-wrapper #address")
 var userphone = document.querySelector(".input-wrapper #phone")
 var useremail = document.querySelector(".input-wrapper #email")
+var handle = document.querySelector("#handle");
 
 var kinNam = document.querySelector(".input-wrapper #kin-name")
 var kinid = document.querySelector(".input-wrapper #kin-id")
@@ -186,7 +197,7 @@ var kinemail = document.querySelector(".input-wrapper #kin-email")
 
 
 function handleinputs(){
-    if(userNam.value==="" || userpassport.value ==="" || userqid.value==="" || useraddress.value === "" || userphone.value ==="" || useremail.value ===""){
+    if(userNam.value==="" || handle.value || userpassport.value ==="" || userqid.value==="" || useraddress.value === "" || userphone.value ==="" || useremail.value ===""){
         document.querySelector(".error-message").style.display = "flex";
         form_1.style.display = "block";
         form_2.style.display = "none";
