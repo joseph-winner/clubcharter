@@ -5,52 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lion of the Desert</title>
+    <link rel="stylesheet" href="./user.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <style>
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .admin-section{
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border-radius: 6px;
-        padding: 20px;
-    }
-    .admin-section h2{
-        margin-bottom: 30px;
-        font-size: 18px;
-    }
-
-    .admin-section input{
-        margin: 20px 0px;
-    }
+    
 </style>
 <body>
-    <article class="admin-section">
-        <div class="avater">
-            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/eszyyflr.json"
-                    trigger="hover"
-                    style="width:80px;height:80px">
-                </lord-icon>
-        </div>
-        <h2>Enter Your User Name</h2>
-        <input type="name" name="name" id="name" placeholder="Enter Registered Name" required>
-        <button>Search</button>
-    </article>      
+    <section class="admin-card-holder">
+        <article class="admin-section">
+            <div class="avater">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/eszyyflr.json"
+                        trigger="hover"
+                        style="width:80px;height:80px">
+                    </lord-icon>
+            </div>
+            <h2>Enter Your User Name</h2>
+            <input type="name" name="name" id="searchname" placeholder="Enter Registered Name" required>
+            <button class="search-btn">Search</button>
+        </article>  
+    </section>
+    <div class="danger-message" style="display: none;">
+        <h1>😱</h1>
+        <h2>Sorry <span class="user-name"></span> You Need to Register</h2>
+        <p>
+            Click <a href="../Registration/register.html">Here</a> to Register! Or <a href="./user.html">Try Again</a>
+        </p>
+    </div>
+    <article class="profile-holder">
+        <p class="back-home-btn">
+            
+        </p>
+
+    </article>    
 </body>
 <script src="./user.js" type="module"></script>
 </html>

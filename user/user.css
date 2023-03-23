@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.admin-card-holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.admin-section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     padding: 30px 15px;
+     border-radius: 15px;
+}
+
+.danger-message{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 0px 10px;
+     padding: 30px 15px;
+     border-radius: 15px;
+}
+
+.admin-section input:hover, .admin-section input:active, .admin-section input:visited{
+        outline: none;
+}
+
+.admin-section input{
+    outline: none;
+    border: 1px solid #111;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.admin-section button{
+    background: none;
+    outline: none;
+    border: none;
+    background-color: #c549f5;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 5px;
+}
+
+.profile-holder .back-home-btn{
+    top: 0px;
+    font-size: 28px;
+}
+
+.profile-holder .back-home-btn a{
+    text-decoration: none;
+    color: #c549f5;
+}
+
+.user-profile-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-holder img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.personal-info-profile, .kin-info-profile, .photos-section{
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 6px;
+}
+
+.user-details--list{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.user-info-details h3{
+    text-align: center;
+    
+    margin-top: 5px;
+}
+
+.kin-personal-info-cols-1, .user-personal-info-cols-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+.kin-personal-info-cols-1 h5, .user-personal-info-cols-1 h5{
+    font-size: 18px;
+}
+
+/* @media(max-width:767px){
+    .profile-holder{
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+} */
