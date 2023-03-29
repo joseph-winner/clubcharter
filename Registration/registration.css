@@ -249,7 +249,7 @@
   }
 
   .input-wrapper .imageFile:after{
-    content: "Add Image  +";
+    content: "Upload Photo  ";
     font-size: 20px;
     width: 100%;
     font-weight: 600;
@@ -276,16 +276,28 @@
     font-size: 16px;
     cursor: pointer;
   } */
+
+  .reg-header h1{
+    font-size: 36px;
+  }
+
+  .reg-header span{
+    font-size: 36px; 
+    font-weight: 600; 
+    color: #c549f5;
+  }
 @media(max-width:767px){
     .register-member{
         margin: 10px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         padding: 5px;
     }
+
     .reg-header{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 30px;
+    }
+    .reg-header h1{
+        font-size: 24px;
     }
     .input-wrapper input{
         width: 95%;

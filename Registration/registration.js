@@ -61,6 +61,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebas
             document.querySelector("#qid--backarea").src = (reader.result);
             document.querySelector("#qid--backarea").style.display = "block"
             qidBack_photo.style.display = "none"
+            document.querySelector("#passarea").style.display = "block";
         }
         reader.readAsDataURL(imageChanges);
     })
@@ -137,7 +138,7 @@ form_1_next_btn.addEventListener("click", () =>{
     form_2_btn.style.display = "flex"
 
     form_2_progressbar.classList.add("active")
-    // handleinputs();
+    handleinputs();
 })
 
 
@@ -160,7 +161,7 @@ form_2_next_btn.addEventListener("click", () =>{
     form_3_btn.style.display = "flex"
 
     form_3_progressbar.classList.add("active")
-    // handleInputs();
+    handleInputs();
 })
 
 form_3_back_btn.addEventListener("click", () =>{
@@ -197,7 +198,7 @@ var kinemail = document.querySelector(".input-wrapper #kin-email")
 
 
 function handleinputs(){
-    if(userNam.value==="" || handle.value || userpassport.value ==="" || userqid.value==="" || useraddress.value === "" || userphone.value ==="" || useremail.value ===""){
+    if(userNam.value==="" || handle.value ==="" || userpassport.value ==="" || userqid.value==="" || useraddress.value === "" || userphone.value ==="" || useremail.value ===""){
         document.querySelector(".error-message").style.display = "flex";
         form_1.style.display = "block";
         form_2.style.display = "none";
@@ -206,6 +207,7 @@ function handleinputs(){
         form_2_btn.style.display = "none"
 
         form_2_progressbar.classList.remove("active")
+        document.documentElement.scrollTop = 0;
     } 
 }
 
@@ -220,11 +222,14 @@ function handleInputs(){
         form_3_btn.style.display = "none"
 
         form_3_progressbar.classList.remove("active")
+        document.documentElement.scrollTop = 0;
     } 
 }
 
 errorBtn.addEventListener("click", ()=>{
     document.querySelector(".error-message").style.display = "none";
+    userNam.focus();
+
 })
 
 

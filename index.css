@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,153 +8,199 @@
     
 }
 
-header{
+.hero-section{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
-    color: #c549f5;
-    height: 40px;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0,0,0,0.5) url(./images/cover004.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    color: #fff;
+}
+.hero-text span{
+    display: block;
+    margin-bottom: 10px;
 }
 
-header h1{
-    font-size: 16px;
+.hero-text{
+    margin: 0px 15px;
+    text-align: center;
 }
 
-.head-join{
-    position: relative;
+.hero-text h1{
+    margin-bottom: 60px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+    animation-duration: 1.6s;
+    animation-name: slidein;
+    transition: 0.4s ease-in;
+    font-size: 36px;
+    text-align: center;
 }
 
-header #head-user h1{
+.hero-text p{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Kalam', cursive;
+    line-height: 1;
+}
+
+.hero-text button{
+    background: none;
+    outline: none;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 6px 12px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.hero-text button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.about-club{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
-
-.sheme-header .tagline{
-    opacity: 0.7;
-    font-weight: 600;
-}
-
-.sheme-header .link-btn{
-    background-color: #ef9372;
-    text-align: center;
-    font-weight: 500;
-    margin: 8px 2px;
-    border-radius: 15px;
-    font-size: 14px;
-}
-
-.sheme-header .link-btn a{
-    text-decoration: none;
-    color: #fff;
-}
-.scheme-1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 8px;
-    background: linear-gradient(to bottom right,#c549f5, #ff978c);
-    border-radius: 10px;
-    padding: 5px;
-    color: #fff;
-}
-
-.scheme-1 img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.scheme-img img{
-    width: 150px;
-}
-.scheme-2 .scheme-img img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    mix-blend-mode: color-burn;
-}
-.scheme-2{
-    display: flex;
-    position: relative;
-    flex-direction: column;
+    gap: 25px;
     margin: 20px 10px;
-    background-color: #c549f5;
-    padding: 10px;
-    border-radius: 15px;
-    overflow: hidden;
-    color: #fff;
+
 }
 
-
-.scheme-2 .button-privacy{
-    text-decoration: none;
-    /* position: absolute; */
-    right: 10px;
-    bottom: 2px;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 20px;
-    font-size: 10px;
-    font-weight: 600;
-    color: #c549f5;
-    margin-top: 10px;
-    width: 100px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.scheme-2 .button-privacy a{
-    text-decoration: none;
-    color: #c549f5;
-}
-
-.scheme-3{
-    margin: 20px 10px;
-}
-
-#scheme-3-div a{
-    display: flex;
-    align-items: center;
-    margin: 10px 3px;
+.about-club img{
+    width: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 1px solid #ddd;
-    padding: 5px;
-    border-radius: 8px;
-    color: #c549f5;
+    border-radius: 10px;
 }
 
-#scheme-3-div a{
+.about-desc button{
+    background: none;
+    outline: none;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 6px 12px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.about-desc button a{
     text-decoration: none;
-    color: #c549f5;
+    color: #fff;
 }
 
-.scheme-3 div img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
+.about-desc h1{
+    font-size: 32px;
+    margin-bottom: 20px;
 }
+
+.about-club p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+.why-join-u{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+}
+
+.why-join-u h1{
+    margin-bottom: 15px;
+}
+
+.why-join-u .join-header{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 5px;
+}
+
+.join .rows{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.join .rows h4{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.join .rows i{
+    color: cornflowerblue;
+    font-size: 36px;
+
+}
+
+
 
 footer{
-    background: linear-gradient(to bottom right,#c549f5, #ff978c);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
     text-align: center;
-    padding: 5px;
-    position: sticky;
-    bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding-bottom: 6px;
 }
 
+footer span{
+    opacity: 0.7;
+    margin-left: 15px;
+}
+
+@media(max-width:767px){
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .about-club{
+        flex-wrap: wrap;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .about-club img{
+        box-shadow: none;
+    }
+
+    .join{
+        flex-wrap: wrap;
+    }
+    .why-join-u .join-header{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

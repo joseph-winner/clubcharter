@@ -48,9 +48,7 @@ async function readData() {
       <div class="user-details--list">
       <div class="user-info-details">
             <div class="user-profile-header">
-            <p class="back-home-btn">
-            <a href="../index.html"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-            </p>
+            
             <h3>CLUB CHARTER</h3>
             </div>
           

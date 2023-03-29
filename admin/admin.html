@@ -29,6 +29,7 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 6px;
         padding: 20px;
+        padding-top: 30px;
     }
     .admin-section h2{
         margin-bottom: 30px;
@@ -37,7 +38,25 @@
 
     .admin-section input{
         margin: 20px 0px;
+        padding: 8px;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        border: 2px solid #ccc;
     }
+
+    .admin-section button{
+        background: none;
+        border: none;
+        outline: none;
+        background-color: #c549f5;
+        padding: 8px 15px;
+        text-align: center;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-weight: 600;
+        }
 
     .alert-message{
         display: block;
@@ -63,6 +82,11 @@
 </style>
 <body>
     <article class="admin-section">
+        <span style="font-size: 36px; font-weight: 600; color: #c549f5; position: absolute; top: 20px; left: 20px;">
+            <a style="text-decoration: none;" href="../index.html">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+        </span>
         <div class="avater">
             <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
                 <lord-icon
@@ -76,7 +100,7 @@
         <input type="password" name="password" id="password" placeholder="*****" required>
         <button>Login</button>
     </article>
-    <div class="alert-message" >
+    <div class="alert-message" style="display: none;" >
         <h4>CLUB CHARTER</h4>
         <p>
             Dear User You Must Be Registered as Admin No such Records in our Data Base
@@ -107,8 +131,10 @@
             var password = document.getElementById("password");
             if(name.value === user1.name || name.value === user2.name && password.value === user1.password || password.value === user2.password){
                 window.location = "../USERDATA/USERPROFILEDATA.html"
-            } else {
+            } else if(name.value !== user1.name || name.value !== user2.name && password.value !== user1.password || password.value !== user2.password){
                 document.querySelector(".alert-message").style.display = "block";
+            } else if(name.value == "" || name.value == "" && password.value == "" || password.value == ""){
+                document.querySelector(".alert-message").style.display = "none";
             }
         
         })
