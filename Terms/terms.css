@@ -5,47 +5,63 @@
     font-family: 'Poppins', sans-serif;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin: 30px 15%;
-    padding: 20px;
-    border-radius: 1rem;
-    line-height: 44px;
-    font-weight: 500;
-}
-
-.fa{
-    font-size: 8px;
-    color: aqua;
-}
-
-hr{
-    margin: 15px 5px;
-    opacity: 0.3;
-}
-
 .heading{
+    background-color: cornflowerblue;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.home-btn{
+    margin-left: 20px;
+    cursor: pointer;
     position: sticky;
     top: 0;
-    background-color: #fff;
-    font-size: 14px;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
 }
 
-@media(max-width:767px){
-    section{
-        margin: 30px 10px;
-        padding: 20px;
-        border-radius: 1rem;
-        line-height: 34px;
-    }
-    p{
-        margin-bottom: 10px;
-    }
+.home-btn a{
+    text-decoration: none;
+    color: green;
+    line-height: 3;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.club-terms{
+    margin: 10px;
+}
+
+section{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+section .terms-header{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section .terms-sub-header{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+section .terms-sub-header p{
+    margin-bottom: 15px;
+}
+
+section .terms-small ul{
+    list-style: none;
+    margin-left: 20px;
+    list-style-type: circle;
+    font-style: italic;
+}
+
+section .terms-small ul li{
+    margin-bottom: 15px;
 }
